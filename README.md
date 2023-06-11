@@ -1,20 +1,22 @@
 # Notechos
 
 ## Description:  
-* The Notechos application is built for writing and saving notes to file. This enables a user to be organized and keep track of their ideas and retreive them later..
+* The Notechos application is built for writing and saving notes to file. This enables a user to be organized and keep track of their ideas and retreive them later.
 * Using an Express.js back end, data is saved and recalled from a JSON file. The user facing HTML interface lists the titles of saved notes to the left and their is an aempty field on the right  for the additio of a new note.
 * As an app this may be used to integrate into other apps, or be used as a standalone to generate a note that will not persist when the application page is closed.
 * A front to back end complete program deployed to heroku, Notechos codebase may be found in github.
 
 ## Installation
 
-somthingmythical.heroku
+https://arcane-eyrie-82976.herokuapp.com
 
 ## Usage
 >
 > **Note**:
 
-![cat crch](develop/utils/screenshot.png)
+https://gdutra2002.github.io/Notechos/
+
+![Notechos](develop/helpers/NotechosScreenshot.png)
 
 ## Credits
 UC Davis Coding bootcamp is credited with the front end starter code.

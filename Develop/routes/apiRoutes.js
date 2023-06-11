@@ -1,14 +1,14 @@
-const notes = require('express').Router();
+const router = require('express').Router();
 const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the notes
-notes.get('/', (req, res) => {
+router.get('/api/notes', (req, res) => {
   readFromFile('./db/notes.json').then((data) => res.json(JSON.parse(data)));
 });
 
 // POST Route for a new UX/UI note
-notes.post('/', (req, res) => {
+router.post('/api/notes', (req, res) => {
   console.log(req.body);
 
   const { title, note } = req.body;
@@ -27,4 +27,5 @@ notes.post('/', (req, res) => {
   }
 });
 
-module.exports = notes;
+
+module.exports = router;

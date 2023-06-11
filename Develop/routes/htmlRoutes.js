@@ -1,11 +1,21 @@
-const express = require('express');
+const router = require('express').Router();
+const path = require('path');
 
 const notesRouter = require('./apiRoutes');
+const apiRoutes = require('./apiRoutes');
 
+router.use('/api', apiRoutes);
 
-const app = express();
+router.get('/notes', (req, res) => {
+      res.sendFile(path.join(__dirname, '../public/notes.html'));
+    });
 
-app.use('/notes', notesRouter);
+router.use((req, res) => {
+  res.send("")
+});
 
+router.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, '../public/index.html'));
+    });
 
-module.exports = app;
+module.exports = router;
