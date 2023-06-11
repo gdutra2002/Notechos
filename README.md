@@ -19,7 +19,7 @@ node index.js
 ```
 https://gdutra2002.github.io/Notechos/
 
-![Notechos](Develop/helpers/NotechosScreenshot.png)
+![Notechos](Main/helpers/NotechosScreenshot.png)
 
 ## Credits
 UC Davis Coding bootcamp is credited with the front end starter code.
