@@ -11,13 +11,12 @@ notes.get('/', (req, res) => {
 notes.post('/', (req, res) => {
   console.log(req.body);
 
-  const { title, note, username } = req.body;
+  const { title, note } = req.body;
 
   if (req.body) {
     const newNote = {
       title,
       note,
-      username,
       note_id: uuid(),
     };
 
