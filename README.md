@@ -13,10 +13,13 @@ https://arcane-eyrie-82976.herokuapp.com
 ## Usage
 >
 > **Note**:
-
+> From the terminal, navigate into Main folder:
+```bash
+node index.js
+```
 https://gdutra2002.github.io/Notechos/
 
-![Notechos](develop/helpers/NotechosScreenshot.png)
+![Notechos](Develop/helpers/NotechosScreenshot.png)
 
 ## Credits
 UC Davis Coding bootcamp is credited with the front end starter code.
